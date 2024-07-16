@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-inline: 100px;
+}
+
+main {
+    margin-inline: 100px;
+    padding-inline: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+nav h1 {
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+nav ul li:last-child {
+    position: relative;
+    cursor: pointer;
+}
+
+nav ul li:last-child div {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: -4px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero_left {
+    width: 55%;
+}
+
+.hero-right {
+    width: 45%;
+}
+
+.hero_left h1 {
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.hero-right img {
+    width: 100%;
+
+}
+
+.hero_left p {
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-block: 16px;
+}
+
+.hero-btn {
+    border-radius: 41px;
+    padding: 10px 24px 10px 24px;
+    background: rgb(224, 44, 109);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.hero-right {
+    background-image: url("images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+
+    /* margin-inline: 50px; */
+}
+
+.sponsor {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-block: 30px;
+}
+
+.hr1 {
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.378%, rgba(192, 204, 218, 0.1) 100%);
+    margin-top: 68px;
+    border: 0;
+    height: 1px;
+}
+
+.hr2 {
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.378%, rgba(192, 204, 218, 0.1) 100%);
+    margin-bottom: 100px;
+    border: 0;
+    height: 1px;
+
+}
+
+.popular>h1 {
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.collections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.collection {
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+}
+
+.collection img {
+    width: 100%;
+}
+
+.collection h1 {
+    color: rgb(24, 25, 31);
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.collection .price {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.reviews {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.reviews-left>i {
+    color: rgb(251, 130, 0);
+
+}
+
+.reviews-right {
+    color: rgb(94, 99, 102);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+
+.popular .card-footer {
+    color: rgb(120, 120, 133);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+    text-align: left;
+    width: 65%;
+}
+
+.btn-popular-cont {
+    text-align: right;
+}
+
+.collection-btn {
+    border-radius: 41px;
+    padding: 10px 24px 10px 24px;
+    color: rgb(224, 44, 109);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-block: 30px;
+}
+
+.featured {
+    display: flex;
+    gap: 50px;
+}
+
+.featured-left {
+    width: 40%;
+}
+
+.featured-right h1 {
+    color: rgb(10, 8, 38);
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.featured-right p {
+    color: rgb(108, 108, 108);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-block: 16px;
+    width: 75%;
+}
+
+.featured-btn {
+    border-radius: 12px;
+    padding: 10px 24px 10px 24px;
+    background: rgb(224, 44, 109);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-block: 10px;
+}
+
+footer {
+    margin-top: 70px;
+    background-color: rgb(27, 27, 50);
+    padding-block: 50px;
+    text-align: center;
+}
+
+footer h1 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+}
+
+footer p {
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+footer .icons {
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.icons i {
+    color: white;
+    font-size: 22px;
+}
+
+nav>li {
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    main {
+        margin-inline: 30px;
+    }
+
+    .featured {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .featured-left {
+        width: 100%;
+    }
+
+    .featured-right {
+        width: 100%;
+    }
+
+    .featured-right p {
+        width: 100%;
+    }
+
+    .featured-left img {
+        width: 100%;
+    }
+
+    .sponsor {
+        flex-wrap: wrap;
+        margin-block: 20px;
+        gap: 20px;
+    }
+
+    .sponsor img {
+        width: 30%;
+    }
+
+    /* nav {
+        flex-direction: column;
+    } */
+
+    .collections {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+
+    }
+
+    .hero_left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero_left h1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .hr2 {
+        margin-bottom: 30px;
+    }
+
+    .hr1 {
+        margin-top: 20px;
+    }
+
+    header {
+        margin-inline: 30px;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav ul li:last-child {
+        display: block;
+    }
+
+    nav>li {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width:992px) {
+    main {
+        margin-inline: 50px;
+    }
+
+    .featured-left {
+        width: 50%;
+    }
+
+    .featured-right {
+        width: 50%;
+
+    }
+
+    .featured {
+        gap: 15px;
+    }
+
+    .featured-right p {
+        width: 100%;
+    }
+
+    .featured-right h1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .featured-left img {
+        width: 100%;
+    }
+
+    .sponsor {
+        flex-wrap: wrap;
+        margin-block: 20px;
+        gap: 20px;
+    }
+
+
+    nav {
+        flex-direction: column;
+    }
+
+    .collections {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .collection {
+        width: 45%;
+    }
+
+
+    header {
+        margin-inline: 50px;
+    }
+
+
+}
